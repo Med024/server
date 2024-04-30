@@ -13,7 +13,9 @@ const users = require ('./Routes/userRoutes')
 const order = require("./Routes/orderRoutes")
 
 
-app.use(cors());
+app.use(cors({
+  origin:["http://localhost:3000" ,"https://mern-stack-appa.onrender.com"],
+}));
 app.use(express.json());
 app.use(cookieParser());
 app.use(fileUpload());
