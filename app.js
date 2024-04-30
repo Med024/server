@@ -40,6 +40,9 @@ app.use('/api/v1' , order)
 
 //MiddleWare To handler errors
 app.use(errorMiddleware);
+app.use({
+  origin:["http://localhost:3000","https://gear-tn.onrender.com"],
+})
 
 
 module.exports = app;
