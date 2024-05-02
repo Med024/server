@@ -14,7 +14,7 @@ const order = require("./Routes/orderRoutes")
 
 
 app.use(cors({
-  origin:["http://localhost:3000" ,"https://mern-stack-appa.onrender.com"],
+  origin:["http://localhost:3000" ,"https://mern-app-q7dl.onrender.com"],
 }));
 app.use(express.json());
 app.use(cookieParser());
